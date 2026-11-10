@@ -10,7 +10,7 @@ const initNavbar = (()=>{
     
     homeButton.addEventListener("click",(e)=>{
         container.replaceChildren();
-        console.log("home");
+        container.className = "homeContainer"
         home();
     })
     menuButton.addEventListener("click",(e)=>{

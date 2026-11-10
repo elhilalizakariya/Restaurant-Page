@@ -1,15 +1,13 @@
 import ramen from "../assets/kruntch-okinawasoba3.jpg"
-import "./style.css";
+import "./home.css";
 
 export default function (){
     const container = document.querySelector("#content");
 
     const h1 = document.createElement("h1");
-    h1.textContent = "Best Ramen Noodles In Town";
+    h1.innerHTML = 'Best Ramen Noodles </br> <section> In Town</section>';
+    h1.classList.add('homeTitle');
     container.appendChild(h1);
 
-    const ramenImage = document.createElement("img");
-    ramenImage.src = ramen;
-    container.appendChild(ramenImage);
 
 }

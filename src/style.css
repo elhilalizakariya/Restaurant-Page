@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Katsuno Japan Demo';
+    src: url('../assets/fonts/KatsunoJapanDemo.woff2') format('woff2'),
+        url('../assets/fonts/KatsunoJapanDemo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body {background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Cdefs%3E%3CradialGradient id='grad' cx='50%25' cy='50%25' r='50%25' fx='50%25' fy='50%25'%3E%3Cstop offset='9%25' stop-color='%23333' /%3E%3Cstop offset='10%25' stop-color='%23222' /%3E%3Cstop offset='19%25' stop-color='%23222' /%3E%3Cstop offset='20%25' stop-color='%23333' /%3E%3Cstop offset='29%25' stop-color='%23333' /%3E%3Cstop offset='30%25' stop-color='%23222' /%3E%3Cstop offset='39%25' stop-color='%23222' /%3E%3Cstop offset='40%25' stop-color='%23333' /%3E%3Cstop offset='49%25' stop-color='%23333' /%3E%3Cstop offset='50%25' stop-color='%23222' /%3E%3Cstop offset='59%25' stop-color='%23222' /%3E%3Cstop offset='60%25' stop-color='%23333' /%3E%3Cstop offset='69%25' stop-color='%23333' /%3E%3Cstop offset='70%25' stop-color='%23222' /%3E%3Cstop offset='79%25' stop-color='%23222' /%3E%3Cstop offset='80%25' stop-color='%23333' /%3E%3Cstop offset='89%25' stop-color='%23333' /%3E%3Cstop offset='90%25' stop-color='%23222' /%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle fill='url(%23grad)' cy='27' r='57' /%3E%3Ccircle fill='url(%23grad)' cx='100' cy='27' r='57' /%3E%3Ccircle fill='url(%23grad)' cx='50' cy='57' r='57' /%3E%3Ccircle fill='url(%23grad)' cy='87' r='57' /%3E%3Ccircle fill='url(%23grad)' cx='100' cy='87' r='57' /%3E%3C/svg%3E") center center / 5rem auto;}
 
 
@@ -6,6 +16,7 @@ body{
     grid-template-rows: 1fr 6fr;
     grid-template-columns: 1fr 3fr 1fr;
     height:100vh;
+    font-family: 'Katsuno Japan Demo';
 }
 
 header{
@@ -28,7 +39,16 @@ header>nav{
     min-width: 0;  /* Prevents image intrinsic width from overflowing column */
     min-height: 0; /* Prevents image intrinsic height from overflowing row */
     overflow: hidden; /* Clips any sub-pixel overflow */
-    
+    background-image:        linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ), url("../assets/decorative-japanese-themed-circular-pattern-design/a3d8be21-4357-478b-a02d-ba42c98ac9f3.jpg");
+    background-size:cover;
+    padding: 24px;
+
+    border: 10px solid #ffb31a; /* Red accent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
 }
 
 img{
@@ -37,3 +57,43 @@ img{
     object-fit: cover;
     display: block; /* Removes inline whitespace gaps */
 }
+
+
+.button-92 {
+  --c: #ffb31a;
+  /* text color */
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #cc1426;
+  /* background color */
+  color: #0000;
+  border: 3px solid #ffb31a;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.button-92 {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+  height:90px;
+  width:190px;
+}
+
