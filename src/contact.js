@@ -1,7 +1,9 @@
 import "./style.css";
+import "./contact.css"
 
 export default function(){
     const container = document.querySelector("#content");
+    container.className = "contactContainer";
 
     const form = document.createElement("form");
     form.setAttribute("method","post");
@@ -34,7 +36,7 @@ export default function(){
     const commentLabel = document.createElement("label");
     comment.setAttribute("id","comment");
     comment.setAttribute("name","comment");
-    comment.setAttribute("rows","5");
+    comment.setAttribute("rows","3");
     comment.setAttribute("cols","33");
     commentLabel.setAttribute("for","comment");
     commentLabel.textContent = "Comment:";
@@ -43,7 +45,8 @@ export default function(){
 
     const submit = document.createElement("button");
     submit.textContent="Send";
-    submit.setAttribute("type","submit");
+    submit.className = "button-92"
+    submit.setAttribute("type","button");
 
 
     form.append(nameDiv,emailDiv,commentDiv,submit);

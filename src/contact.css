@@ -1,0 +1,31 @@
+.contactContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.emailDiv,.nameDiv,.commentDiv{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    gap:20px;
+    color:#ffb31a;
+    -webkit-text-stroke: 2px black;
+    font-size: 1.5em;
+
+}
+
+.emailDiv>input,.nameDiv>input,.commentDiv>textarea{
+    background-color: #ffb31a;
+    border:5px solid #cc1426;
+    font-family: inherit;
+    width:300px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+}
