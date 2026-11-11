@@ -8,6 +8,9 @@ import ramen6 from "../assets/pngwing.com (6).png"
 import ramen7 from "../assets/pngwing.com (7).png"
 import ramen8 from "../assets/pngwing.com (8).png"
 import ramen9 from "../assets/pngwing.com (9).png"
+import ramen10 from "../assets/pngwing.com (10).png"
+import ramen11 from "../assets/pngwing.com (11).png"
+import ramen12 from "../assets/pngwing.com (12).png"
 
 
 
@@ -67,6 +70,22 @@ export default function (){
     menuImage9.src = ramen9;
     menuImage9.className= "menuImage";
     container.appendChild(menuImage9);
+
+    const menuImage10 = document.createElement("img");
+    menuImage10.src = ramen10;
+    menuImage10.className= "menuImage";
+    container.appendChild(menuImage10);
+
+    const menuImage11 = document.createElement("img");
+    menuImage11.src = ramen11
+    menuImage11.className= "menuImage";
+    container.appendChild(menuImage11);
+
+    const menuImage12 = document.createElement("img");
+    menuImage12.src = ramen12;
+    menuImage12.className= "menuImage";
+    container.appendChild(menuImage12);
+
 
 
    
