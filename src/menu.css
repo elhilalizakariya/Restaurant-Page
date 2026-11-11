@@ -1,0 +1,28 @@
+.menuContainer{
+    display:grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    grid-template-rows:repeat(3, minmax(0,1fr));
+}
+
+
+
+.menuImage{
+    width:200px;
+    justify-self: center;
+    height:150px;
+    object-fit: contain;
+}
+
+.menuImage:hover {
+    animation: wobble 0.8s ease-in-out;
+}
+
+@keyframes wobble {
+    0% { transform: translateX(0%) rotate(0deg); }
+    15% { transform: translateX(-10%) rotate(-2deg); }
+    30% { transform: translateX(8%) rotate(1deg); }
+    45% { transform: translateX(-6%) rotate(-1deg); }
+    60% { transform: translateX(4%) rotate(1deg); }
+    75% { transform: translateX(-2%) rotate(-0.5deg); }
+    100% { transform: translateX(0%) rotate(0deg); }
+}
